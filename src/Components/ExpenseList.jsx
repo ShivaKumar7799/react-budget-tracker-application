@@ -54,7 +54,7 @@ function ExpenseList() {
         <ExpenseChar expenseData = {expenseData} />
       </div>
       {expenseData.map((item) => <div key={item.id} > 
-          <div> {item.expenseName} ------- {item.cost} <button onClick={() => handleDeleteExpense(item.id)} >Delete</button> <button onClick = {() => editExpense(item.id)} > Edit</button> </div>
+          <div> {item.expenseName} -------- {item.cost} <button onClick={() => handleDeleteExpense(item.id)} >Delete</button> <button onClick = {() => editExpense(item.id)} > Edit</button> </div>
        </div> )}
        <div style={{marginBottom : "100px"}} >
         <h2>Add Expense</h2>
